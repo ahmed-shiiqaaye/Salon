@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&family=PT+Sans:ital@1&family=Poppins:wght@400;500&family=Rubik:wght@300;400;500;700;900&family=Tangerine:wght@400;700&family=Ubuntu:ital,wght@0,400;0,700;1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary:#662e91;
+}
+body{
+    font-family: rubik;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    max-width: 1000px;
+}
+.navbar .container .logo{
+    width: 200px;
+    height: 60px;
+}
+.navbar .container .navbar-links ul li{
+    margin: 15px;
+}
+.navbar .container .navbar-links ul li a{
+    color: black;
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: .8;
+}
+.navbar .container .navbar-links ul li a.active::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background:var(--primary);
+}
+.showcase{
+    height: 85vh;
+    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+    url(/home.jpg) no-repeat center center/cover;
+}
+.showcase .container {
+    height: 100%;
+}
+.showcase .container .text{
+    max-width: 650px;
+    height: 100%;
+    margin: 0 auto;
+    color: white;
+}
+.showcase .container .text p{
+    font-family: Tangerine;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.showcase .container .text h1{
+    font-size: 70px;
+    font-family: serif;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+.showcase .container .text .btn{
+    background: pink;
+    padding:14px 20px;
+    color: #000;
+}
